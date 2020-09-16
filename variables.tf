@@ -25,6 +25,7 @@ variable "public_vlan_id" {
 
 variable "vlan_datacenter" {
   type        = string
+  default = "fra02"
   description = "Datacenter for VLANs defined in private_vlan_number and public_vlan_number. Use `ibmcloud ks zone ls --provider classic` to see a list of availabe datacenters.  The data center should be in within the cluster's region."
 }
 
